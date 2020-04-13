@@ -1,5 +1,5 @@
 public class No61 {
-    public class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
         ListNode(int x) { val = x; }

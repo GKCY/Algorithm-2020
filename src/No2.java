@@ -1,6 +1,6 @@
 public class No2 {
 
-    class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
         ListNode(int x) { val = x; }
