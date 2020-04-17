@@ -6,15 +6,9 @@ import java.util.stream.Collectors;
 public class Test {
 
     public static void main(String[] args) {
-        LinkedList<Integer> nums = new LinkedList<>();
-        ArrayList<Integer> set = new ArrayList<>();
-        nums.add(1);
-        nums.add(1);
-        nums.add(3);
-//        List<Integer> res = nums.stream().filter(num -> num > 2).collect(Collectors.toList());
-//        nums.stream().distinct().forEach();
-        nums.stream().forEach(System.out::println);
-        System.out.println(set);
+        int[] nums = new int[]{1,2,3,4,5,6};
+        nums = new int[7];
+        Tools.printArrays(nums);
     }
 
 
