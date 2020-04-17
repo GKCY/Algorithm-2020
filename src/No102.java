@@ -5,7 +5,7 @@ import java.util.Queue;
 
 
 public class No102 {
-    public class TreeNode {
+    private class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
