@@ -24,10 +24,10 @@ public class No83 {
     }
 
     public static void main(String[] args) {
-        ListNode head = Tools.createLinkedlist(new int[]{1,1,2,2,3});
-//        Tools.printLinkedlist(head);
-        No83 t = new No83();
-        t.deleteDuplicates(head);
-        Tools.printLinkedlist(head);
+//        ListNode head = tool.Tools.createLinkedlist(new int[]{1,1,2,2,3});
+////        tool.Tools.printLinkedlist(head);
+//        No83 t = new No83();
+//        t.deleteDuplicates(head);
+//        tool.Tools.printLinkedlist(head);
     }
 }

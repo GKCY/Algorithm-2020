@@ -46,8 +46,8 @@ public class No92 {
 //            System.out.println(head.val);
 //            head = head.next;
 //        }
-        ListNode head = Tools.createLinkedlist(new int[]{1,2,3,4,5});
-        Tools.printLinkedlist(head);
+//        ListNode head = tool.Tools.createLinkedlist(new int[]{1,2,3,4,5});
+//        tool.Tools.printLinkedlist(head);
     }
 
 }
