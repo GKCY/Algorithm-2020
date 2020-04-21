@@ -3,7 +3,7 @@ package base;
 import java.util.HashMap;
 
 public class No337 {
-    public class TreeNode {
+    private class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

@@ -1,7 +1,7 @@
 package base;
 
 public class No543 {
-    class TreeNode {
+    private class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

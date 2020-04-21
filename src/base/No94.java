@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Stack;
 
 public class No94 {
-    public class TreeNode {
+    private class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
