@@ -5,7 +5,7 @@ import DS.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NO113 {
+public class No113 {
     List<List<Integer>> res = new ArrayList<>();
     List<Integer> temp = new ArrayList<>();
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
