@@ -1,15 +1,18 @@
+import DS.TreeNode;
 import tool.Tools;
 
 import java.util.Arrays;
+import java.util.EmptyStackException;
 import java.util.List;
+import java.util.Stack;
 
 
 public class Test {
 
     public static void main(String[] args) {
-        int[] nums = new int[]{1,2,3,4,5,6};
-        List<int[]> ints = Arrays.asList(nums);
-        Tools.printArrays(ints.get(0));
+        String a = "12";
+        String b = "21";
+        System.out.println(a.compareTo(b));
     }
 
 

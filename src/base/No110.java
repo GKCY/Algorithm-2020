@@ -1,7 +1,5 @@
 package base;
 
-import TreeTraversal.TreeNode;
-
 public class No110 {
     private class TreeNode {
         int val;

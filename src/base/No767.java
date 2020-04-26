@@ -21,7 +21,6 @@ public class No767 {
                     odd += 2;
                     count[i]--;
                 }
-
                 while (count[i]> 0) {
                     str[even] = (char) ('a' + i);
                     even += 2;

@@ -1,7 +1,7 @@
 package base;
 
 public class No206 {
-    public class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
         ListNode(int x) { val = x; }
