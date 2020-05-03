@@ -1,6 +1,6 @@
 package base;
 
-import DS.Trie;
+import design.Trie;
 
 public class No208 extends Trie {
 }

@@ -2,6 +2,7 @@ package tool;
 
 import DS.ListNode;
 
+
 public class Tools {
     static public ListNode createLinkedlist(int[] nums) {
         ListNode head = null;
@@ -50,6 +51,23 @@ public class Tools {
             System.out.println(builder.toString());
             builder.delete(0, builder.length());
         }
+    }
+
+    static public void printTwoDimensionalArray(int[][] arrays) {
+        StringBuilder builder = new StringBuilder();
+        builder.append("[");
+        for (int[] array :
+                arrays) {
+            builder.append("[");
+            for (int i = 0; i < array.length; i++) {
+                builder.append(array[i]);
+                if (i < array.length - 1)
+                    builder.append(",");
+            }
+            builder.append("]");
+        }
+        builder.append("]");
+        System.out.println(builder.toString());
     }
 
     public static void main(String[] args) {

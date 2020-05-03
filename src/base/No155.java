@@ -1,6 +1,6 @@
 package base;
 
-import DS.MinStack;
+import design.MinStack;
 
 public class No155 extends MinStack {
 

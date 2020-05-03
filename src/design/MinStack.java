@@ -1,4 +1,4 @@
-package DS;
+package design;
 
 import java.util.Stack;
 

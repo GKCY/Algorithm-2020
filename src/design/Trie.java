@@ -1,4 +1,4 @@
-package DS;
+package design;
 
 // No208 实现Trie树
 public class Trie {

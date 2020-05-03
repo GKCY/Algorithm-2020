@@ -23,10 +23,8 @@ public class Test {
 
 
     public static void main(String[] args) {
-        int[] nums = {1,2,3,3,3,2,1};
-        System.out.println(new Test().findPeakElement(nums));
+        System.out.println();
     }
-
 
 }
 
