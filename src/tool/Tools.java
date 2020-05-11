@@ -70,7 +70,19 @@ public class Tools {
         System.out.println(builder.toString());
     }
 
-    public static void main(String[] args) {
+    static public void printBooleanArrays(boolean[] nums) {
+        StringBuilder res = new StringBuilder();
+        res.append("[");
+        for (boolean num :
+                nums) {
+            res.append(String.valueOf(num));
+            res.append('\t');
+        }
+        res.delete(res.length()-1, res.length());
+        res.append(']');
+        System.out.println(res.toString());
+    }
 
+    public static void main(String[] args) {
     }
 }
