@@ -83,6 +83,20 @@ public class Tools {
         System.out.println(res.toString());
     }
 
+    static public void printBooleanMatrix(boolean[][] matrix) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+        for (int i = 0; i < m; i++) {
+            StringBuilder builder = new StringBuilder();
+            for (int j = 0; j < n; j++) {
+                builder.append(matrix[i][j]);
+                builder.append("\t");
+            }
+            System.out.println(builder.toString());
+            builder.delete(0, builder.length());
+        }
+    }
+
     public static void main(String[] args) {
     }
 }
