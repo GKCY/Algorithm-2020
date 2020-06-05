@@ -1,6 +1,4 @@
-package mianshi;
-
-import java.util.LinkedList;
+package leetcodeInterview;
 
 public class Mianshi62 {
     public int lastRemaining(int n, int m) {

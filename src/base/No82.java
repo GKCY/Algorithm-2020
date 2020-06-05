@@ -9,7 +9,7 @@ public class No82 {
     }
 
 
-    public ListNode deleteDuplicates(ListNode head) {
+    public ListNode deleteDuplicates1(ListNode head) {
         if (head == null)
             return null;
         ListNode dummy = new ListNode(0);
@@ -55,6 +55,23 @@ public class No82 {
             }
         }
         return dummy.next;
+    }
+
+    public ListNode deleteDuplicates(ListNode head) {
+        if (head == null || head.next == null)
+            return head;
+        if (head.val != head.next.val) {
+            head.next = deleteDuplicates(head.next);
+            return head;
+        } else {
+            ListNode p = head.next;
+            while (true) {
+                if (p == null || p.val != head.val)
+                    break;
+                p = p.next;
+            }
+            return deleteDuplicates(p);
+        }
     }
 
 }

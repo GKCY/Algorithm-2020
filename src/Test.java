@@ -3,6 +3,9 @@ import DS.TreeNode;
 import base.No127;
 import tool.Tools;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.Pattern;
@@ -27,10 +30,16 @@ public class Test {
             return -1;
         return nums[r] == target ? r : -1;
     }
-    public static void main(String[] args){
-        for (int i = Integer.MAX_VALUE - 1; i <= Integer.MAX_VALUE;i++)
-            System.out.println(i);
+
+    
+    public static void main(String[] args) throws IOException {
+        Random rand = new Random();
+        for (int i = 0; i < 100; i++) {
+            System.out.println(rand.nextInt(100));
+        }
     }
+
+
 
 }
 

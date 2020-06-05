@@ -1,4 +1,4 @@
-package mianshi;
+package leetcodeInterview;
 
 public class Mianshi08dot11 {
     public int waysToChange(int n) {

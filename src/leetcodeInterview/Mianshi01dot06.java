@@ -1,4 +1,4 @@
-package mianshi;
+package leetcodeInterview;
 
 public class Mianshi01dot06 {
     public String compressString(String S) {

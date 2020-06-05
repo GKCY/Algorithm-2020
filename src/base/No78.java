@@ -8,6 +8,7 @@ public class No78 {
         List<List<Integer>> res = new ArrayList<>();
         res.add(new ArrayList<>());
         for(Integer n : nums){
+            System.out.println(res);
             int size = res.size();
             for(int i = 0; i < size; i++){
                 ArrayList<Integer> tmp = new ArrayList<>(res.get(i));
@@ -16,5 +17,9 @@ public class No78 {
             }
         }
         return res;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(new No78().subsets(new int[]{1,2,3}));
     }
 }

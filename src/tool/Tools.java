@@ -2,6 +2,8 @@ package tool;
 
 import DS.ListNode;
 
+import java.util.Arrays;
+
 
 public class Tools {
     static public ListNode createLinkedlist(int[] nums) {
@@ -23,20 +25,6 @@ public class Tools {
         }
         System.out.println(builder.toString());
     }
-
-    static public void printArrays(int[] nums) {
-        StringBuilder res = new StringBuilder();
-        res.append("{");
-        for (int num :
-                nums) {
-            res.append(String.valueOf(num));
-            res.append(',');
-        }
-        res.delete(res.length()-1, res.length());
-        res.append('}');
-        System.out.println(res.toString());
-    }
-
 
     /** matrix非空 */
     static public void printMatrix(int[][] matrix) {
@@ -70,20 +58,8 @@ public class Tools {
         System.out.println(builder.toString());
     }
 
-    static public void printBooleanArrays(boolean[] nums) {
-        StringBuilder res = new StringBuilder();
-        res.append("[");
-        for (boolean num :
-                nums) {
-            res.append(String.valueOf(num));
-            res.append('\t');
-        }
-        res.delete(res.length()-1, res.length());
-        res.append(']');
-        System.out.println(res.toString());
-    }
 
-    static public void printBooleanMatrix(boolean[][] matrix) {
+    public static void printBooleanMatrix(boolean[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;
         for (int i = 0; i < m; i++) {
@@ -97,6 +73,21 @@ public class Tools {
         }
     }
 
-    public static void main(String[] args) {
+    public static void printArrays(Object[] o) {
+        System.out.println(Arrays.toString(o));
     }
+
+    public static void printArrays(int[] nums) {
+        System.out.println(Arrays.toString(nums));
+    }
+
+    public static void printArrays(boolean[] arr) {
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void main(String[] args) {
+
+    }
+
+
 }

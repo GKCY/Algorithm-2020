@@ -2,14 +2,10 @@ package base;
 
 import DS.TreeNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
-
-public class No102 {
-    public List<List<Integer>> levelOrder(TreeNode root) {
+public class No197 {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         if (root != null)
@@ -27,6 +23,7 @@ public class No102 {
             }
             res.add(temp);
         }
+        Collections.reverse(res);
         return res;
     }
 }

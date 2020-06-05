@@ -2,22 +2,17 @@ package base;
 
 public class No209 {
     public static int minSubArrayLen(int s, int[] nums) {
-        int minStep = 0, sum = 0;
-        int l = 0, r = -1;
+        int l = 0, r = 0, length = Integer.MAX_VALUE, sum = 0;
         while (r < nums.length) {
-            if (sum < s) {
-                if (r == nums.length-1)
-                    break;
-                sum += nums[++r];
-            } else if (sum >= s) {
-                int step = r - l + 1;
-                if (minStep == 0 || step < minStep)
-                    minStep = step;
-                sum -= nums[l];
-                l++;
+            sum += nums[r++];
+            while (sum >= s) {
+                if (r - l < length)
+                    length = r - l;
+                sum -= nums[l++];
             }
         }
-        return minStep;
+        return length == Integer.MAX_VALUE ? 0 : length;
+
     }
 
     public static void main(String[] args) {
