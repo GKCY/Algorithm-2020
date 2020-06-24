@@ -1,7 +1,5 @@
 package base;
 
-import tool.Tools;
-
 public class No494 {
     int res = 0;
     int target;

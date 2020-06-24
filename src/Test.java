@@ -1,14 +1,5 @@
-import DS.tNode;
-import DS.TreeNode;
-import base.No127;
-import tool.Tools;
-
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.util.*;
 import java.util.concurrent.*;
-import java.util.regex.Pattern;
 
 
 public class Test {
@@ -52,6 +43,7 @@ public class Test {
 //        executor.execute(new say("1", barrier));
 ////        executor.execute(new say("2", barrier));
 //        executor.execute(new say("3", barrier));
+        System.out.println("a".substring(0,0));
     }
 
     private static class say implements Runnable {

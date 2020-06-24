@@ -1,9 +1,5 @@
 package base;
 
-import tool.Tools;
-
-import java.util.*;
-
 public class No767 {
     public static String reorganizeString(String S) {
         int[] count = new int[26];

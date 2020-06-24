@@ -1,7 +1,7 @@
 package base;
 
 import DS.ListNode;
-import tool.Tools;
+import tool.Utils;
 
 public class No328 {
     public ListNode oddEvenList(ListNode head) {
@@ -30,8 +30,8 @@ public class No328 {
 
     public static void main(String[] args) {
         int[] nums = {1,2,3,4,5};
-        ListNode head = Tools.createLinkedlist(nums);
-        Tools.printLinkedlist(head);
-        Tools.printLinkedlist(new No328().oddEvenList(head));
+        ListNode head = Utils.createLinkedlist(nums);
+        Utils.printLinkedlist(head);
+        Utils.printLinkedlist(new No328().oddEvenList(head));
     }
 }

@@ -1,6 +1,6 @@
 package base;
 
-import tool.Tools;
+import tool.Utils;
 
 public class No338 {
     public int[] countBits(int num) {
@@ -16,6 +16,6 @@ public class No338 {
     }
 
     public static void main(String[] args) {
-        Tools.printArrays(new No338().countBits(2));
+        Utils.printArrays(new No338().countBits(2));
     }
 }

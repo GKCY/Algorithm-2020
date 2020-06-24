@@ -1,7 +1,5 @@
 package design;
 
-import tool.Tools;
-
 public class NumArray {
     int[] nums;
     int[] tree;

@@ -1,6 +1,6 @@
 package competition;
 
-import tool.Tools;
+import tool.Utils;
 
 import java.util.Arrays;
 
@@ -36,6 +36,6 @@ public class LCP08 {
     public static void main(String[] args) {
         int[][] increase = {{0,4,5},{4,8,8},{8,6,1},{10,10,0}};
         int[][] requirements = {{20,2,6},{9,2,6},{10,18,3},{8,14,9}};
-        Tools.printArrays(LCP08.getTriggerTime(increase, requirements));
+        Utils.printArrays(LCP08.getTriggerTime(increase, requirements));
     }
 }

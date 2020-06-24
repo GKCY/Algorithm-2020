@@ -1,7 +1,6 @@
 package base;
 
 import DS.ListNode;
-import tool.Tools;
 
 import java.util.Deque;
 import java.util.LinkedList;

@@ -1,9 +1,7 @@
 package base;
 
 import DS.ListNode;
-import tool.Tools;
-
-import javax.sound.midi.SoundbankResource;
+import tool.Utils;
 
 public class No234 {
     public boolean isPalindrome(ListNode head) {
@@ -47,7 +45,7 @@ public class No234 {
     public static void main(String[] args) {
         No234 t = new No234();
         int[] nums = {1,2,2,2};
-        ListNode head = Tools.createLinkedlist(nums);
+        ListNode head = Utils.createLinkedlist(nums);
         System.out.println(t.isPalindrome(head));
     }
 

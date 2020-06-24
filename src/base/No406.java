@@ -1,6 +1,6 @@
 package base;
 
-import tool.Tools;
+import tool.Utils;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -18,7 +18,7 @@ public class No406 {
     public static void main(String[] args) {
         int[][] people = {{9,0},{7,0},{1,9},{3,0},{2,7},{5,3},{6,0},{3,4},{6,2},{5,2}};
         No406 t = new No406();
-        Tools.printTwoDimensionalArray(people);
+        Utils.printTwoDimensionalArray(people);
         t.reconstructQueue(people);
     }
 }

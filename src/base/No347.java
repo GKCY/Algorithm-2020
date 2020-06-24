@@ -1,6 +1,6 @@
 package base;
 
-import tool.Tools;
+import tool.Utils;
 
 import java.util.*;
 
@@ -49,6 +49,6 @@ public class No347 {
 
     public static void main(String[] args) {
         int[] nums = {1, 2};
-        Tools.printArrays(No347.topKFrequent2(nums, 2));
+        Utils.printArrays(No347.topKFrequent2(nums, 2));
     }
 }

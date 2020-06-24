@@ -1,7 +1,5 @@
 package base;
 
-import tool.Tools;
-
 public class No283 {
     public static void moveZeroes(int[] nums) {
         if (nums.length == 0)

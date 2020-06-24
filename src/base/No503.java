@@ -1,7 +1,5 @@
 package base;
 
-import tool.Tools;
-
 import java.util.Stack;
 
 public class No503 {

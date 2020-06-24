@@ -1,6 +1,6 @@
 package competition;
 
-import tool.Tools;
+import tool.Utils;
 
 import java.util.Stack;
 
@@ -26,6 +26,6 @@ public class No5420 {
 
     public static void main(String[] args) {
         int[] nums = {5, 4};
-        Tools.printArrays(No5420.finalPrices(nums));
+        Utils.printArrays(No5420.finalPrices(nums));
     }
 }

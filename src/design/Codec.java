@@ -1,12 +1,9 @@
 package design;
 
 import DS.TreeNode;
-import tool.Tools;
 
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * Definition for a binary tree node.

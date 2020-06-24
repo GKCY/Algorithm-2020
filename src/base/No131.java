@@ -1,6 +1,6 @@
 package base;
 
-import tool.Tools;
+import tool.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,6 +51,6 @@ public class No131 {
     public static void main(String[] args) {
         No131 t = new No131();
         t.partition("aba");
-        Tools.printBooleanMatrix(t.dp);
+        Utils.printBooleanMatrix(t.dp);
     }
 }

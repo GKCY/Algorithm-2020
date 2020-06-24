@@ -1,11 +1,5 @@
 package base;
 
-import tool.Tools;
-
-import javax.sound.midi.SoundbankResource;
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class No647 {
     public static int countSubstrings(String s) {
         int res = 0;

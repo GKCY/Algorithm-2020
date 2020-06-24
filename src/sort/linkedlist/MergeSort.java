@@ -1,7 +1,7 @@
 package sort.linkedlist;
 
 import DS.ListNode;
-import tool.Tools;
+import tool.Utils;
 
 public class MergeSort {
     public ListNode mergeSort(ListNode head) {
@@ -42,7 +42,7 @@ public class MergeSort {
 
     public static void main(String[] args) {
         MergeSort s = new MergeSort();
-        ListNode head = Tools.createLinkedlist(new int[]{4,2,1,3,9,0,1,23});
-        Tools.printLinkedlist(s.mergeSort(head));
+        ListNode head = Utils.createLinkedlist(new int[]{4,2,1,3,9,0,1,23});
+        Utils.printLinkedlist(s.mergeSort(head));
     }
 }

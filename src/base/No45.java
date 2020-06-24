@@ -1,7 +1,5 @@
 package base;
 
-import tool.Tools;
-
 public class No45 {
 //    public int jump(int[] nums) {
 //        int[] dp = new int[nums.length];
