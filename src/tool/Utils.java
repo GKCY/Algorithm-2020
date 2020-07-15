@@ -99,12 +99,26 @@ public class Utils {
         System.out.println(Arrays.toString(nums));
     }
 
+    public static void printArrays(int[] nums, int n) {
+        StringBuilder builder = new StringBuilder();
+        builder.append("[");
+        for (int i = 0; i < n; i++) {
+            if (i != 0)
+                builder.append(",");
+            builder.append(String.valueOf(nums[i]));
+        }
+        builder.append("]");
+        System.out.println(builder.toString());
+    }
+
     public static void printArrays(boolean[] arr) {
         System.out.println(Arrays.toString(arr));
     }
 
     public static void main(String[] args) {
-
+        int[] nums = {0,1,2,3,4,5,6,7,8};
+        int[] cp = new int[]{nums[0],1,4};
+        Utils.printArrays(cp);
     }
 
 
