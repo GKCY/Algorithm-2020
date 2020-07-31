@@ -35,7 +35,7 @@ public class Utils {
             StringBuilder builder = new StringBuilder();
             for (int j = 0; j < n; j++) {
                 builder.append(matrix[i][j]);
-                builder.append(" ");
+                builder.append('\t');
             }
             System.out.println(builder.toString());
             builder.delete(0, builder.length());

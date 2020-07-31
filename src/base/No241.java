@@ -1,15 +1,20 @@
 package base;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class No241 {
+    HashMap<String, List<Integer>> mem = new HashMap<>();
     public List<Integer> diffWaysToCompute(String input) {
         List<Integer> res = new ArrayList<>();
         if (input.length() == 0)
             return res;
+        if (mem.containsKey(input))
+            return mem.get(input);
         if (!input.contains("+") && !input.contains("-") && !input.contains("*")) {
             res.add(Integer.valueOf(input));
+            mem.put(input, res);
             return res;
         }
 
@@ -36,6 +41,7 @@ public class No241 {
                 }
             }
         }
+        mem.put(input, res);
         return res;
     }
 

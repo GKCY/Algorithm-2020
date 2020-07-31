@@ -19,8 +19,6 @@ public class No438 {
             if (need[p.charAt(i)-'a']++ == 0)
                 needSize++;
         }
-//        System.out.println(needSize);
-//        Utils.printArrays(need);
         while (right < s.length()) {
                 char c = s.charAt(right);
                 if (need[c-'a'] == 0) {
