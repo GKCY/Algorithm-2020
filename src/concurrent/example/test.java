@@ -1,18 +1,24 @@
 package concurrent.example;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class test {
 
     public static void main(String[] args) {
-        Thread thread = new Thread(new Runnable() {
+        ExecutorService executorService = Executors.newFixedThreadPool(1);
+        executorService.submit(new Runnable() {
             @Override
             public void run() {
-                while (true){
-
-                }
+                System.out.println("Hello!");
             }
         });
-        thread.setDaemon(true);
-        thread.start();
-        System.out.println("main thread is over");
+        executorService.submit(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("123");
+            }
+        });
+        executorService.shutdown();
     }
 }

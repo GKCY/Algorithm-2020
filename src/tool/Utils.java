@@ -42,6 +42,20 @@ public class Utils {
         }
     }
 
+    static public void printMatrix(char[][] matrix) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+        for (int i = 0; i < m; i++) {
+            StringBuilder builder = new StringBuilder();
+            for (int j = 0; j < n; j++) {
+                builder.append(matrix[i][j]);
+                builder.append('\t');
+            }
+            System.out.println(builder.toString());
+            builder.delete(0, builder.length());
+        }
+    }
+
     static public void printMatrix(boolean[][] dp) {
         int m = dp.length;
         int n = dp[0].length;
