@@ -1,5 +1,5 @@
 import java.io.IOException;
-import java.util.HashSet;
+import java.util.*;
 import java.util.concurrent.*;
 
 
@@ -44,7 +44,8 @@ public class Test {
 //        executor.execute(new say("1", barrier));
 ////        executor.execute(new say("2", barrier));
 //        executor.execute(new say("3", barrier));
-        System.out.println("123+".contains("2+"));
+//        System.out.println("123+".contains("2+"));
+
     }
 
     private static class say implements Runnable {

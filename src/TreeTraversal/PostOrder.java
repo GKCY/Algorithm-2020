@@ -21,8 +21,6 @@ public class PostOrder {
                 res.add(cur.val);
                 pre = cur;
                 cur = null;
-                if (stack.isEmpty())
-                    return res;
             } else {
                 cur = cur.right;
                 pre = null;
